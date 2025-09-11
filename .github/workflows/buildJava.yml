@@ -2,10 +2,8 @@ name: "Java CI with Maven - Test and package"
 
 on:
   pull_request:
-    types:
-      - opened
-    branches:
-     - 'main/**' #execute when pulled
+  push:
+    branches: ["main"] #execute when pulled
 
 jobs:
   Activation:
