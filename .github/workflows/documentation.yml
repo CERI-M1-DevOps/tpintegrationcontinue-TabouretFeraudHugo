@@ -15,5 +15,5 @@ jobs:
         - name: PeaceIris
           uses: peaceiris/actions-gh-pages@v4
           with:
-            github_token: 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
-            publish_dir: ./public 
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
