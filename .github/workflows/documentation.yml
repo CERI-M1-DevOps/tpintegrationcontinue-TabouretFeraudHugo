@@ -1,9 +1,9 @@
 name: "documentation.xml"
 
 on:
-    pull_request:
+  pull_request:
     types:
-        - closed
+      - closed
 
 jobs:
     if_merged:
