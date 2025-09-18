@@ -27,3 +27,4 @@ jobs:
           path: |
             ~/.maven/caches
             ~/.maven/wrapper
+          key: ${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
