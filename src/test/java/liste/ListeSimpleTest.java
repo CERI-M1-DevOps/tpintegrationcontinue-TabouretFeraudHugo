@@ -117,7 +117,7 @@ public class ListeSimpleTest {
     @Test
     public void supprimePremier(){
         listeATester.ajout(1);
-        listeATester.supprimerPremier(1);
+        listeATester.supprimePremier(1);
         assertEquals(0,listeATester.getSize());
     }
 
