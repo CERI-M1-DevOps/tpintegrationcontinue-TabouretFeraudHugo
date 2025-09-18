@@ -1,0 +1,16 @@
+name: "documentation.xml"
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Commande
+        run: mvn -B javadoc::javadoc
+      - name: PeaceIris
+        uses: peaceiris/actions-gh-pages@v4
